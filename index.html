@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录</title>
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<img src="logo_blue.png" class="logo" alt="doubled">
+<section class="form-box">
+    <input type="password" id="pwd" class="pwd" placeholder="输入正确口令进入">
+    <button id="login">登录</button>
+</section>
+
+<script type="text/javascript" src="canvas-particle.js"></script>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript">
+var pwd =document.getElementById("pwd");
+var login = document.getElementById("login");
+
+login.addEventListener("click", function() {
+    (pwd.value == "doubled000") ? window.location.href="projects.html" : alert("口令错误");
+});
+</script>
+</body>
+</html>
